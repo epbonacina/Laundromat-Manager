@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <title>{% block title %}Página Base{% endblock title %}</title>
     <script src="https://kit.fontawesome.com/8ac45bd63e.js" crossorigin="anonymous"></script>
-    <link href="{% static 'base.css' %}" rel="stylesheet">
+    <link href="{% static 'base.css' %}?{% now 'u'='' %}" rel="stylesheet">
 </head>
 <body>
-    {% block navbar %}
-       <ul class = "nav-ul">
-           <li class = "nav-li"><a class = "nav-link" href = "#">Nova nota</a><i class="fa-solid fa-file"></i></li>
-           <li class = "nav-li"><a class = "nav-link" href = "#">Novo cliente</a><i class="fa-solid fa-user-plus"></i></li>
-           <li class = "nav-li"><a class = "nav-link" href = "#">Efetuar pagamento</a><i class="fa-solid fa-hand-holding-dollar"></i></li>
-           <li class = "nav-li"><a class = "nav-link" href = "#">Pesquisar por nota</a><i class="fa-solid fa-magnifying-glass"></i></li>
-           <li class = "nav-li"><a class = "nav-link" href = "#">Pesquisar por cliente</a><i class="fa-solid fa-hand"></i></li>
-       </ul>
-    {% endblock navbar %}
+{% block navbar %}
+    <div class="nav-container">
+        <ul class="nav-ul">
+            <li class="nav-li"><a class="nav-link" href="#">Nova nota</a><i class="fa-solid fa-file"></i></li>
+            <li class="nav-li"><a class="nav-link" href="#">Novo cliente</a><i class="fa-solid fa-user-plus"></i></li>
+            <li class="nav-li"><a class="nav-link" href="#">Efetuar pagamento</a><i class="fa-solid fa-hand-holding-dollar"></i>
+            </li>
+            <li class="nav-li"><a class="nav-link" href="#">Pesquisar por nota</a><i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="nav-li"><a class="nav-link" href="#">Pesquisar por cliente</a><i class="fa-solid fa-hand"></i></li>
+        </ul>
+    </div>
 
-    {% block content %}
-        Conteúdo
-    {% endblock content %}
+{% endblock navbar %}
+
+{% block content %}
+    Conteúdo
+{% endblock content %}
 </body>
 </html>

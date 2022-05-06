@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-grow: 1;
     margin: 0px;
+    padding: 0px;
     background: #098CD2;
 }
 
@@ -28,4 +29,9 @@ body {
     text-decoration: none;
     color: inherit;
     margin-right: 15px;
+}
+
+.table, th, td{
+    border-collapse: collapse;
+    border: 1px solid;
 }

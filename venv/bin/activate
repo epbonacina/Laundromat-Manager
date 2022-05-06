@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/enzo/Desktop/Projeto para Lavanderia/venv"
+VIRTUAL_ENV="/home/enzo/Desktop/Laundromat-Manager/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

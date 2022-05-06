@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/enzo/Desktop/Projeto para Lavanderia/venv/bin/python3" "$0" "$@"
-' '''
+#!/home/enzo/Desktop/Laundromat-Manager/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

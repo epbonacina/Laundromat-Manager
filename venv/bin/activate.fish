@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/enzo/Desktop/Projeto para Lavanderia/venv"
+set -gx VIRTUAL_ENV "/home/enzo/Desktop/Laundromat-Manager/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
